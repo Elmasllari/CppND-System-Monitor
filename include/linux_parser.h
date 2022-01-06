@@ -27,6 +27,7 @@ int RunningProcesses();
 std::string OperatingSystem();
 std::string Kernel();
 
+  
 // CPU
 enum CPUStates {
   kUser_ = 0,
@@ -45,6 +46,7 @@ long Jiffies();
 long ActiveJiffies();
 long ActiveJiffies(int pid);
 long IdleJiffies();
+float ProcessTime(int pid);
 
 // Processes
 std::string Command(int pid);
